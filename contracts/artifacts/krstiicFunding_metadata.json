@@ -33,6 +33,26 @@
 			},
 			{
 				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "goal",
 				"outputs": [
 					{
@@ -95,6 +115,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "widraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -125,11 +152,11 @@
 	},
 	"sources": {
 		"contracts/testu.sol": {
-			"keccak256": "0x4ca28c7adc23fd18bbaf8110d476c456b4db01ffd3c8b9b46dac76442b234c9f",
+			"keccak256": "0x4673396405d37d8642f1fc3b372b1c549e6dfb9af1d3f9cf615f57d064cc2704",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b11a3ce11b52a1132131ade62f502a608740c267ee405274fe0094c3650cc9ec",
-				"dweb:/ipfs/QmT1vjXwWet9cDDCdTghAf7DtVVWwKk66CjD5YcGzrrT9R"
+				"bzz-raw://b9909870cbf6760d3729d811f09e9416778ed5c878a04d2f8b0709b5074d1ab7",
+				"dweb:/ipfs/QmV5b7G1BLsZVGuhMQizkmZgLuXFfutR4vrrjU4v8qDoa4"
 			]
 		}
 	},
