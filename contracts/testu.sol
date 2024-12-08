@@ -23,11 +23,20 @@ contract krstiicFunding {
         vlastnik=msg.sender;
     }
 function fund() public payable  {
-
+    require(msg.value > 0, unicode"Vrednost mora biti večja od 0.");
+    require(block.timestamp<rokTrajanja, unicode"Rok je potekel.");
 }
+
 function widraw()public  {
+    require(msg.sender== vlastnik, unicode"Nimate dostopa");
+    require(address(this).balance >=goal, unicode"Cilj ni dosežen");
 
+    uint256 balance =address(this).balance;
+    require(balance>0, unicode"dvig mora biti večji od 0");
+
+    payable(vlastnik).transfer(balance);
 }
+
 function getBalance()public view returns (uint256) {
 
 }
